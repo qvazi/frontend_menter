@@ -16,6 +16,9 @@ export default function Page() {
             Social links profile
           </Link>
         </li>
+        <li>
+          <Link href={"/challenges/recipe-page-main"}>recipe-page-main</Link>
+        </li>
       </ul>
     </body>
   );
