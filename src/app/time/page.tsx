@@ -3,20 +3,24 @@
 import { useEffect, useState } from "react";
 
 const TimePage = () => {
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState<Date | null>(null);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    if (window) {
       setDate(new Date());
-    }, 1000);
 
-    return () => clearInterval(intervalId);
+      const intervalId = setInterval(() => {
+        setDate(new Date());
+      }, 1000);
+
+      return () => clearInterval(intervalId);
+    }
   }, []);
 
   return (
     <div>
       <h1>Date & Time</h1>
-      <p suppressHydrationWarning>{date.toLocaleString()}</p>
+      <p suppressHydrationWarning>{date ? date.toLocaleString() : "--:--"}</p>
     </div>
   );
 };
