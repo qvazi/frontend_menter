@@ -180,6 +180,7 @@ const Instructions = () => {
     <section>
       <SectionHeader>Instructions</SectionHeader>
       <List
+        marker="decimal"
         items={list}
         renderItem={({ heading, text }) => (
           <TextWithHeading heading={heading} text={text} />
