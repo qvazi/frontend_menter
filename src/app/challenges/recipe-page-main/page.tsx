@@ -206,21 +206,18 @@ const Nutrition = () => {
         The table below shows nutritional values per serving without the
         additional fillings.
       </p>
-      <dl className="flex flex-col gap-3">
+      <dl className="flex flex-col">
         {list.map(({ dt, dd }, index) => {
           const isLast = index === list.length - 1;
           return (
-            <>
-              <div className="px-8 flex flex-row gap-4">
-                <dt className="w-full">{dt}</dt>
-                <dd
-                  className={`w-full ${typography.bodyBold} ${textColor["Brandy Red"]}`}
-                >
-                  {dd}
-                </dd>
-              </div>
-              {!isLast && <hr />}
-            </>
+            <div className="px-8 py-3 flex flex-row gap-4 border-b border-solid last:border-0">
+              <dt className="w-full">{dt}</dt>
+              <dd
+                className={`w-full ${typography.bodyBold} ${textColor["Brandy Red"]}`}
+              >
+                {dd}
+              </dd>
+            </div>
           );
         })}
       </dl>
