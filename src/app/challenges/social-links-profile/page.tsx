@@ -32,7 +32,7 @@ const UserInfo = () => {
 const UserSkills = () => {
   return (
     <p className="text-[rgba(255,255,255,1)] text-base text-center">
-      "Front-end developer and avid reader."
+      &quot;Front-end developer and avid reader.&quot;
     </p>
   );
 };
