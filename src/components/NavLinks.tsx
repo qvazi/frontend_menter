@@ -6,12 +6,8 @@ const links: { href: string; label: string }[] = [
     label: "Index",
   },
   {
-    href: "/time",
-    label: "Time & Date",
-  },
-  {
-    href: "/about",
-    label: "About",
+    href: "/challenges",
+    label: "Challenges",
   },
 ];
 
