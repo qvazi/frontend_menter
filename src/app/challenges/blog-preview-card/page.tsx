@@ -5,7 +5,7 @@ import avatarWebp from "../../../../public/image-avatar.webp";
 const BlogPreviewCardPage = () => {
   return (
     <body className="bg-[#F4D04E]">
-      <div className="flex justify-center items-center h-screen">
+      <main className="flex justify-center items-center h-screen">
         <div className="w-[384px] bg-white border border-solid border-[#111111] rounded-[20px] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-6 flex flex-col gap-6">
           <div>
             <Image
@@ -26,9 +26,9 @@ const BlogPreviewCardPage = () => {
               Published 21 Dec 2023
             </div>
 
-            <h2 className="text-[24px] leading-[150%] font-extrabold text-[#111111]">
+            <h1 className="text-[24px] leading-[150%] font-extrabold text-[#111111]">
               HTML & CSS foundations
-            </h2>
+            </h1>
 
             <p className="text-[16px] leading-[150%] font-medium text-[#6b6b6b]">
               These languages are the backbone of every website, defining
@@ -43,7 +43,7 @@ const BlogPreviewCardPage = () => {
             </span>
           </div>
         </div>
-      </div>
+      </main>
     </body>
   );
 };
