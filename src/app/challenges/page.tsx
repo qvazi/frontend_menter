@@ -11,6 +11,11 @@ export default function Page() {
         <li>
           <Link href={"/challenges/blog-preview-card"}>Blog preview card</Link>
         </li>
+        <li>
+          <Link href={"/challenges/social-links-profile"}>
+            Social links profile
+          </Link>
+        </li>
       </ul>
     </body>
   );
