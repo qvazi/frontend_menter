@@ -81,7 +81,9 @@ const List = <T,>({
     DarkRaspberry: "marker:text-[#7A284E]",
   };
   return (
-    <ul className={`${markerColor[color]} ${listStyle[marker]} pl-5`}>
+    <ul
+      className={`${markerColor[color]} ${listStyle[marker]} pl-5 flex flex-col gap-2`}
+    >
       {items.map((item, index) => (
         <li key={index} className="pl-4">
           {renderItem(item)}
