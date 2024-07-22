@@ -208,9 +208,11 @@ const Nutrition = () => {
       </p>
       <dl className="flex flex-col">
         {list.map(({ dt, dd }, index) => {
-          const isLast = index === list.length - 1;
           return (
-            <div className="px-8 py-3 flex flex-row gap-4 border-b border-solid last:border-0">
+            <div
+              key={index}
+              className="px-8 py-3 flex flex-row gap-4 border-b border-solid last:border-0"
+            >
               <dt className="w-full">{dt}</dt>
               <dd
                 className={`w-full ${typography.bodyBold} ${textColor["Brandy Red"]}`}
