@@ -231,9 +231,9 @@ const Nutrition = () => {
 export default function Page() {
   return (
     <body
-      className={`bg-[#F3E5D7] ${textColor["Wenge Brown"]} ${typography.bodyRegular}`}
+      className={`bg-[#F3E5D7] ${textColor["Wenge Brown"]} ${typography.bodyRegular} h-auto md:pt-[127px] md:pb-[127px]`}
     >
-      <main className="flex flex-col md:gap-10 md:p-10 md:rounded-3xl bg-white md:max-w-[736px] md:mx-auto md:mt-[127px]">
+      <main className="flex flex-col md:gap-10 md:p-10 md:rounded-3xl bg-white md:max-w-[736px] md:mx-auto">
         <Banner />
         <div className="flex flex-col gap-8 px-8 py-10 md:p-0">
           <Title />
