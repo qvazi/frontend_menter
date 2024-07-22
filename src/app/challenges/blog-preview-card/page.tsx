@@ -1,6 +1,6 @@
 import Image from "next/image";
-import illustrationSvg from "../../../../public/illustration-article.svg";
-import avatarWebp from "../../../../public/image-avatar.webp";
+import illustrationSvg from "../../../../public/blog-preview-card/illustration-article.svg";
+import avatarWebp from "../../../../public/blog-preview-card/image-avatar.webp";
 
 const BlogPreviewCardPage = () => {
   return (
